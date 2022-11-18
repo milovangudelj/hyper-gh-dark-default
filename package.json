@@ -1,6 +1,6 @@
 {
 	"name": "hyper-gh-dark-default",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"main": "index.js",
 	"homepage": "https://hyper.milovangudelj.com",
 	"description": "GitHub default dark theme for Hyper",
@@ -19,5 +19,8 @@
 		"github-dark-default-theme"
 	],
 	"author": "Milovan Gudelj <milovan.gudelj@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@primer/primitives": "^7.10.0"
+	}
 }
