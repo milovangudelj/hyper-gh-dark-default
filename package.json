@@ -1,0 +1,23 @@
+{
+	"name": "hyper-gh-dark-default",
+	"version": "0.1.0",
+	"main": "index.js",
+	"homepage": "https://hyper.milovangudelj.com",
+	"description": "GitHub default dark theme for Hyper",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/milovangudelj/gh-dark-default.git"
+	},
+	"keywords": [
+		"hyperterm",
+		"hyper",
+		"hyper.app",
+		"hyper gh-dark-default",
+		"hyper github-dark-default",
+		"hyper theme",
+		"gh-dark-default-theme",
+		"github-dark-default-theme"
+	],
+	"author": "Milovan Gudelj <milovan.gudelj@gmail.com>",
+	"license": "MIT"
+}
