@@ -1,9 +1,12 @@
 'use strict';
 
+const headerBackgroundColor = "#010409";
 const backgroundColor = "#0d1117";
 const foregroundColor = "#c9d1d9";
-const borderColor = "#f78166";
-const cursorColor = "#c9d1d9";
+const borderColor = "#30363d";
+const cursorColor = "#58A6FF";
+const accentColor = "#f78166";
+const selectionColor = "rgba(56,139,253,0.15)";
 const colors = {
 	black: "#0d1117",
 	red: "#ff7b72",
@@ -21,27 +24,44 @@ const colors = {
 	lightMagenta: "#d2a8ff",
 	lightCyan: "#b3f0ff",
 	lightWhite: "#b1bac4",
+	colorCubes: "#b1bac4",
+	grayscale: "#484f58",
 };
 
 exports.decorateConfig = (config) => {
-  return Object.assign({}, config, {
-    backgroundColor,
-    foregroundColor,
-    borderColor,
-    cursorColor,
-    colors,
-    termCSS: `
-      ${config.termCSS || ''}
+	return Object.assign({}, config, {
+		backgroundColor,
+		foregroundColor,
+		borderColor,
+		cursorColor,
+		cursorShape: "BEAM",
+		cursorBlink: true,
+		selectionColor,
+		colors,
+		termCSS: `
+      ${config.termCSS || ""}
     `,
-    css: `
-      ${config.css || ''}
-      .tabs_list .tab_tab.tab_active .tab_text  {
-        background: ${backgroundColor};
-      }
-
-      .tab_active:before {
-        border-color: ${borderColor};
-      }
+		css: `
+    .hyper_main {
+      border: none !important;
+    }
+    .header_header {
+      background: ${headerBackgroundColor} !important;
+    }
+    .tab_tab {
+      color: ${foregroundColor};
+      background: ${headerBackgroundColor} !important;
+      border: 0;
+    }
+    .tab_tab.tab_active {
+      color: ${colors.white};
+      border-bottom: 1px solid ${accentColor} !important;
+      background: ${backgroundColor} !important;
+    }
+    .tabs_borderShim {
+      border-color: transparent !important;
+    }
+    ${config.css || ""}
     `,
-  });
+	});
 };
