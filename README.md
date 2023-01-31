@@ -1,12 +1,12 @@
-# GitHub dark default for [Hyper](https://hyper.is)
+# GitHub Dark for [Hyper](https://hyper.is)
 
-> GitHub dark default theme for [Hyper](https://hyper.is).
+> A port of the GitHub Dark default theme for [Hyper.app](https://hyper.is).
 
 ![Screenshot](./screenshot.png)
 
 ## Install
 
-All instructions can be found at [hyper.milovangudelj.com/](https://hyper.milovangudelj.com/).
+All instructions can be found at [hyper.is/store/hyper-gh-dark-default](https://hyper.milovangudelj.com/store/hyper-gh-dark-default).
 
 ## Tips
 
