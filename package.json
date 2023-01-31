@@ -6,7 +6,7 @@
 	"description": "GitHub default dark theme for Hyper",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/milovangudelj/gh-dark-default.git"
+		"url": "https://github.com/milovangudelj/hyper-gh-dark-default.git"
 	},
 	"keywords": [
 		"hyperterm",
